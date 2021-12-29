@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <div class="container">
+    <h2 class="header_title">Speed typing test</h2>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="current_wpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="current_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="current_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">Accuracy</div>
+        <div class="current_accuracy">100 %</div>
+      </div>
+    </div>
+
+    <div class="quote"></div>
+    <textarea class="input_area" disabled placeholder="Click the 'Start game' button and start typing the text that appears" oninput="processCurrentText()"></textarea>
+      <button class="start_btn" onclick="startGame()">Start game</button>
+    <button class="restart_btn" onclick="startGame()">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
